@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><suite name="End_To_End_Suite">
+  <test name="Barter Sanity Suit">
+    <classes>
+      <class name="com.yash.RMS.Testcase.Login.TestCase_Login">
+        <methods>
+          <include name="Login"/>
+        </methods>
+      </class>
+      <class name="com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation">
+        <methods>
+          <include name="Transaction_ProjectAllocationNavigation"/>
+          <include name="Transaction_AddNewResourceToProject"/>
+          <include name="Transaction_EditFResourceDetails"/>
+          <include name="Transaction_DeleteResourceFromProject"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

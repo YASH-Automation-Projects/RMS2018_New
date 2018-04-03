@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EndtoEndTestSuite" thread-count="2" preserve-order="true">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<!-- <suite-files> <suite-file path="./SalesPlan_testng.xml" /> <suite-file 
+		path="./SalesOrder_testng.xml" /> </suite-files> -->
+
+	<test name="Login and SalesOrder_Cusotmer"><!-- preserve-order="false" -->
+
+		<classes>
+
+			<class 
+				name="com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin"></class>
+			 <class
+				name="com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer"></class> 
+		<!-- 	<class
+				name="com.yash.bartersuite.Testcase.Salesorder.Testcase04_AddSalesOrderTrader"></class> -->
+
+		</classes>
+
+	</test>
+</suite>

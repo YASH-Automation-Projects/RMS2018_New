@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>TestNG:  Login_Validation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login_Validation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 07 12:46:11 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>74 seconds (74887 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Login_TC.Logout()'><b>Logout</b><br>Test class: com.yash.bartersuite.Testcase.Login.Login_TC</td>
+<td></td>
+<td>0</td>
+<td>com.yash.bartersuite.Testcase.Login.Login_TC@2892dae4</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Login_TC.testLogin()'><b>testLogin</b><br>Test class: com.yash.bartersuite.Testcase.Login.Login_TC<br>Test method: Login with different roles<br>Parameters: demo1@bartera@546g.com, P@ssword0, Invalid UserName<br/>
+<a href="#Output-1642679791" onClick='toggleBox("Output-1642679791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1642679791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1642679791">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=User_name_enter><td width=20%>Enter Username</td><td width=20%>demo1@bartera@546g.com</td><td width=20%>User able to Enter Username</td><td width=20%>Username Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Password_enter><td width=20%>Enter Password</td><td width=20%>P@ssword0</td><td width=20%>User able to Enter Password</td><td width=20%>Password Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Click_Submit><td width=20%>Click on Submit button</td><td width=20%>Submit</td><td width=20%>System should validate the credential</td><td width=20%>Invalid credential, getting erroe message</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.yash.bartersuite.Testcase.Login.Login_TC@2892dae4</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Login_TC.testLogin()'><b>testLogin</b><br>Test class: com.yash.bartersuite.Testcase.Login.Login_TC<br>Test method: Login with different roles<br>Parameters: barterdemo@yash.com, demo123, InValid Password<br/>
+<a href="#Output-768776793" onClick='toggleBox("Output-768776793", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-768776793" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-768776793">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=User_name_enter><td width=20%>Enter Username</td><td width=20%>barterdemo@yash.com</td><td width=20%>User able to Enter Username</td><td width=20%>Username Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Password_enter><td width=20%>Enter Password</td><td width=20%>demo123</td><td width=20%>User able to Enter Password</td><td width=20%>Password Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Click_Submit><td width=20%>Click on Submit button</td><td width=20%>Submit</td><td width=20%>System should validate the credential</td><td width=20%>Invalid credential, getting erroe message</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.yash.bartersuite.Testcase.Login.Login_TC@2892dae4</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Login_TC.testLogin()'><b>testLogin</b><br>Test class: com.yash.bartersuite.Testcase.Login.Login_TC<br>Test method: Login with different roles<br>Parameters: demo1@bartera@546g.com, demo123, Invalid Credential<br/>
+<a href="#Output-146874094" onClick='toggleBox("Output-146874094", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146874094" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146874094">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=User_name_enter><td width=20%>Enter Username</td><td width=20%>demo1@bartera@546g.com</td><td width=20%>User able to Enter Username</td><td width=20%>Username Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Password_enter><td width=20%>Enter Password</td><td width=20%>demo123</td><td width=20%>User able to Enter Password</td><td width=20%>Password Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Click_Submit><td width=20%>Click on Submit button</td><td width=20%>Submit</td><td width=20%>System should validate the credential</td><td width=20%>Invalid credential, getting erroe message</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.yash.bartersuite.Testcase.Login.Login_TC@2892dae4</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Login_TC.testLogin()'><b>testLogin</b><br>Test class: com.yash.bartersuite.Testcase.Login.Login_TC<br>Test method: Login with different roles<br>Parameters: barterdemo@yash.com, P@ssword0, Valid Credential<br/>
+<a href="#Output-1164365897" onClick='toggleBox("Output-1164365897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1164365897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1164365897">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=User_name_enter><td width=20%>Enter Username</td><td width=20%>barterdemo@yash.com</td><td width=20%>User able to Enter Username</td><td width=20%>Username Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Password_enter><td width=20%>Enter Password</td><td width=20%>P@ssword0</td><td width=20%>User able to Enter Password</td><td width=20%>Password Accepted</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Click_Submit><td width=20%>Click on Submit button</td><td width=20%>Submit</td><td width=20%>System should validate the credential</td><td width=20%>Exception occurred /nno such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='headerBg']/div/div[1]/div/p/span[1]/msg"}
+  (Session info: chrome=48.0.2564.116)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 42 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'YP1004764DT', ip: '10.8.100.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\KAPIL~1.MAN\AppData\Local\Temp\scoped_dir3120_5615}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69b1e44e84fbf5ab4936eb38e40ebe7f
+*** Element info: {Using=xpath, value=.//*[@id='headerBg']/div/div[1]/div/p/span[1]/msg}</td><TD BGCOLOR= #A71313 > Fail</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.yash.bartersuite.Testcase.Login.Login_TC@2892dae4</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login and SalesOrder_Cusotmer"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="64.279">
+  <properties />
+  
+  
+            <testcase name="Add_SalesOrderCustomerValidation" time="30.603" classname="com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer" />
+                <testcase name="Add_SalesOrderCustomerFileUpload" time="22.575" classname="com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer" />
+                <testcase name="Add_SalesOrderCustomerCancel" time="11.101" classname="com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer" />
+      
+</testsuite>

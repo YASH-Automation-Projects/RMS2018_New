@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [End_To_End_Suite]">
+  <test thread-count="5" name="Barter Sanity Suit(failed)">
+    <classes>
+      <class name="com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation">
+        <methods>
+          <include name="Transaction_AddNewResourceToProject"/>
+          <include name="Transaction_DeleteResourceFromProject"/>
+          <include name="SetupClose"/>
+          <include name="Transaction_ProjectAllocationNavigation"/>
+        </methods>
+      </class> <!-- com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation -->
+    </classes>
+  </test> <!-- Barter Sanity Suit(failed) -->
+</suite> <!-- Failed suite [End_To_End_Suite] -->

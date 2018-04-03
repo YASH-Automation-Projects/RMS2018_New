@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  Barter Sanity Suit</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Barter Sanity Suit</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 29 16:06:23 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12987 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_AddNewResourceToProject()'><b>Transaction_AddNewResourceToProject</b><br>Test class: com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation<br/>
+<a href="#Output-1105416433" onClick='toggleBox("Output-1105416433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105416433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105416433">
+</table><br/>
+<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Scenario 2 _Transaction_Project Allocation_Add New Resource To Project Scenario</th></tr></table><br/>
+<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.txtbox_ProjectSerach(PageObjects_ProjectAllocation.java:30)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.AddNewResourceToProject(Action_ProjectAllocation.java:889)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_AddNewResourceToProject(Testcase_ProjectAllocation.java:126)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105416433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1105416433'><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.txtbox_ProjectSerach(PageObjects_ProjectAllocation.java:30)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.AddNewResourceToProject(Action_ProjectAllocation.java:889)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_AddNewResourceToProject(Testcase_ProjectAllocation.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+</pre></div></td>
+<td>1</td>
+<td>com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation@1af687fe</td></tr>
+<tr>
+<td title='com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_DeleteResourceFromProject()'><b>Transaction_DeleteResourceFromProject</b><br>Test class: com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation<br/>
+<a href="#Output-1690050988" onClick='toggleBox("Output-1690050988", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1690050988" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1690050988">
+</table><br/>
+<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Scenario 4 _Transaction_Project Allocation_Delete Resource From Project Scenario</th></tr></table><br/>
+<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.link_ProjectList(PageObjects_ProjectAllocation.java:160)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.DeleteResourceFromProject(Action_ProjectAllocation.java:1154)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_DeleteResourceFromProject(Testcase_ProjectAllocation.java:166)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690050988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690050988'><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.link_ProjectList(PageObjects_ProjectAllocation.java:160)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.DeleteResourceFromProject(Action_ProjectAllocation.java:1154)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_DeleteResourceFromProject(Testcase_ProjectAllocation.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+</pre></div></td>
+<td>1</td>
+<td>com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation@1af687fe</td></tr>
+<tr>
+<td title='com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_ProjectAllocationNavigation()'><b>Transaction_ProjectAllocationNavigation</b><br>Test class: com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation<br/>
+<a href="#Output-2123533871" onClick='toggleBox("Output-2123533871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2123533871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123533871">
+</table><br/>
+<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Scenario 1 _Transaction_Project Allocation Page Navigation Scenario</th></tr></table><br/>
+<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.Link_Transaction(PageObjects_ProjectAllocation.java:19)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.ProjectAllocationPageNavigation(Action_ProjectAllocation.java:44)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_ProjectAllocationNavigation(Testcase_ProjectAllocation.java:53)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2123533871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2123533871'><pre>java.lang.NullPointerException
+	at com.yash.RMS.POM.Transaction.PageObjects_ProjectAllocation.Link_Transaction(PageObjects_ProjectAllocation.java:19)
+	at com.yash.RMS.TestAction.Transaction.Action_ProjectAllocation.ProjectAllocationPageNavigation(Action_ProjectAllocation.java:44)
+	at com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_ProjectAllocationNavigation(Testcase_ProjectAllocation.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.yash.RMS.CustomProperties.XML.XMLRead(XML.java:545)
+	at com.yash.RMS.CustomProperties.Main.main(Main.java:13)
+</pre></div></td>
+<td>2</td>
+<td>com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation@1af687fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation.Transaction_EditFResourceDetails()'><b>Transaction_EditFResourceDetails</b><br>Test class: com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation<br/>
+<a href="#Output-80141040" onClick='toggleBox("Output-80141040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-80141040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-80141040">
+</table><br/>
+<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Scenario 3 _Transaction_Project Allocation_Edit Project Details Scenario</th></tr></table><br/>
+<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.yash.RMS.Testcase.Transaction.Testcase_ProjectAllocation@1af687fe</td></tr>
+</table><p>
+</body>
+</html>

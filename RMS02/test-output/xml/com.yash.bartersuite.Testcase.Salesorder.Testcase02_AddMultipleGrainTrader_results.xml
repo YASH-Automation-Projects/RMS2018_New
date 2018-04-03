@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AddingmultipleGrainTrader"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.928">
+  <properties />
+  
+  
+            <testcase name="login" time="0.870" classname="com.yash.bartersuite.Testcase.Salesorder.Testcase02_AddMultipleGrainTrader" />
+                <testcase name="AddMultipleGrain" time="11.058" classname="com.yash.bartersuite.Testcase.Salesorder.Testcase02_AddMultipleGrainTrader" />
+      
+</testsuite>

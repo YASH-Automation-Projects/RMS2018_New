@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login and SalesOrder_Cusotmer"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="16.684">
+  <properties />
+  
+  
+            <testcase name="Validlogin" time="16.684" classname="com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin" />
+      
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LoginByExcelSheet"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="52.931">
+  <properties />
+  
+  
+            <testcase name="testLogin" time="11.267" classname="com.yash.bartersuite.Testcase.Login.Login_TC" />
+                <testcase name="testLogin" time="16.817" classname="com.yash.bartersuite.Testcase.Login.Login_TC" />
+                <testcase name="testLogin" time="11.863" classname="com.yash.bartersuite.Testcase.Login.Login_TC" />
+                <testcase name="testLogin" time="11.455" classname="com.yash.bartersuite.Testcase.Login.Login_TC" />
+                <testcase name="Logout" time="1.529" classname="com.yash.bartersuite.Testcase.Login.Login_TC" />
+      
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchwithAllValues"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="32.685">
+  <properties />
+  
+  
+            <testcase name="Searchwithallfields" time="32.685" classname="com.yash.bartersuite.Testcase.SalesplanSearch.Testcase01_Searchwithallcriteria" />
+      
+</testsuite>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SalesPlan_Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="LoginByExcelSheet">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.Login.Login_TC"/>
+    </classes>
+  </test> <!-- LoginByExcelSheet -->
+  <test name="AddingSingleProduct">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct"/>
+    </classes>
+  </test> <!-- AddingSingleProduct -->
+  <test name="DeleteProduct">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct"/>
+    </classes>
+  </test> <!-- DeleteProduct -->
+  <test name="AddingMultipleProducts">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts"/>
+    </classes>
+  </test> <!-- AddingMultipleProducts -->
+  <test name="UploadingFile">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile"/>
+    </classes>
+  </test> <!-- UploadingFile -->
+  <test name="AddingSingleProduct(failed)">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct">
+        <methods>
+          <include name="AddSingleProduct"/>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct -->
+      <class name="com.yash.bartersuite.Testcase.Login.Login_TC">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.Login.Login_TC -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile -->
+    </classes>
+  </test> <!-- AddingSingleProduct(failed) -->
+  <test name="DeleteProduct(failed)">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct -->
+      <class name="com.yash.bartersuite.Testcase.Login.Login_TC">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.Login.Login_TC -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct">
+        <methods>
+          <include name="DeleteProduct"/>
+          <include name="SetUp"/>
+          <include name="end"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile -->
+    </classes>
+  </test> <!-- DeleteProduct(failed) -->
+  <test name="AddingMultipleProducts(failed)">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct -->
+      <class name="com.yash.bartersuite.Testcase.Login.Login_TC">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.Login.Login_TC -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts">
+        <methods>
+          <include name="SetUp"/>
+          <include name="AddMulProduct"/>
+          <include name="end"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile -->
+    </classes>
+  </test> <!-- AddingMultipleProducts(failed) -->
+  <test name="UploadingFile(failed)">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase01_AddSingleProduct -->
+      <class name="com.yash.bartersuite.Testcase.Login.Login_TC">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.Login.Login_TC -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase02_AddMultipleProducts -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase03_DeleteAddProduct -->
+      <class name="com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile">
+        <methods>
+          <include name="SetUp"/>
+          <include name="end"/>
+          <include name="UploadFile"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.yash.bartersuite.Testcase.SalesPlan.Testcase04_UploadFile -->
+    </classes>
+  </test> <!-- UploadingFile(failed) -->
+</suite> <!-- Failed suite [SalesPlan_Suite] -->

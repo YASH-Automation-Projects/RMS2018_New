@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [EndtoEndTestSuite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Login and SalesOrder_Cusotmer">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin"/>
+      <class name="com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer"/>
+    </classes>
+  </test> <!-- Login and SalesOrder_Cusotmer -->
+</suite> <!-- Failed suite [EndtoEndTestSuite] -->

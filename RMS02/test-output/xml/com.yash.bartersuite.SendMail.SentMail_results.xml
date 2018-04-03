@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SendingMail"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.813">
+  <properties />
+  
+  
+            <testcase name="SendingMail" time="1.813" classname="com.yash.bartersuite.SendMail.SentMail" />
+      
+</testsuite>

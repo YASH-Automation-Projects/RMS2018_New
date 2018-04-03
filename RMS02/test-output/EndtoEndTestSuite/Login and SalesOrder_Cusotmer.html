@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Login and SalesOrder_Cusotmer</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login and SalesOrder_Cusotmer</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 23 11:56:25 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>96 seconds (96128 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer.Add_SalesOrderCustomerCancel()'><b>Add_SalesOrderCustomerCancel</b><br>Test class: com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer<br/>
+<a href="#Output-22335496" onClick='toggleBox("Output-22335496", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22335496" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22335496">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=Check_Cancel_Button><td width=20%>Click on Cancel Button</td><td width=20%>Click</td><td width=20%>Do you want to discard changes?</td><td width=20%>Do you want to discard changes?</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Check_CancelOnPopup><td width=20%>Click on Cancel Button on pop up</td><td width=20%>Click</td><td width=20%>New Sales Order</td><td width=20%>New Sales Order</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Check_OkonPopup><td width=20%>Click on Ok button on pop up</td><td width=20%>Click</td><td width=20%>Sales Order</td><td width=20%>Sales Order</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer@ac3a89</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer.Add_SalesOrderCustomerFileUpload()'><b>Add_SalesOrderCustomerFileUpload</b><br>Test class: com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer<br/>
+<a href="#Output-15891814" onClick='toggleBox("Output-15891814", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15891814" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15891814">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=Invalid_FileFormat><td width=20%>Upload EXE format file</td><td width=20%>.EXE file</td><td width=20%>One of the uploaded documents format is not supported.</td><td width=20%>One of the uploaded documents size exceeds 2.0 MB.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Chec_FileSize><td width=20%>Upload file of size>2MB</td><td width=20%>File size > 2 MB</td><td width=20%>One of the uploaded documents size exceeds 2.0 MB.</td><td width=20%>One of the uploaded documents size exceeds 2.0 MB.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer@ac3a89</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer.Add_SalesOrderCustomerValidation()'><b>Add_SalesOrderCustomerValidation</b><br>Test class: com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer<br/>
+<a href="#Output-31939859" onClick='toggleBox("Output-31939859", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31939859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31939859">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=C_SalesLink_available><td width=20%>Verify Sales link is available</td><td width=20%>Not Applicable</td><td width=20%>Sales link available</td><td width=20%>'Sales' link available</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_SalesOrderLink_available><td width=20%>Verify 'Sales Order' link is available</td><td width=20%>Not Applicable</td><td width=20%>'Sales Order' link is available</td><td width=20%>'Sales Order' link is available</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_NewSalesOrderButton_available><td width=20%>Verify 'New Sales Order' button is available</td><td width=20%>Not Applicable</td><td width=20%>New Sales Order' button is available</td><td width=20%>New Sales Order' button is available</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_SaveButton_available><td width=20%>Verify 'Save' button is available</td><td width=20%>Not Applicable</td><td width=20%>'Save' button is available</td><td width=20%>'Save' button is not available</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_SalesType_Blank><td width=20%>Blank Sales Type</td><td width=20%>Blank value</td><td width=20%>Please select Barter Sales Type.</td><td width=20%>Please select Barter Sales Type.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_PriceType_Blank><td width=20%>Blank Price Type</td><td width=20%>Blank value</td><td width=20%>Please select Price Type.</td><td width=20%>Please select Price Type.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_SalesPlan_Blank><td width=20%>Blank Sales Plan</td><td width=20%>Blank value</td><td width=20%>Please select Sales Plan.</td><td width=20%>Please select Sales Plan.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_Incoterms_Blank><td width=20%>Blank Incoterms</td><td width=20%>Blank value</td><td width=20%>Please select Incoterms.</td><td width=20%>Please select Incoterms.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_Customer_Blank><td width=20%>Blank Customer</td><td width=20%>Blank value</td><td width=20%>Please enter Customer ID.</td><td width=20%>Please enter Customer ID.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_CustomerName_Blank><td width=20%>Blank Customer Name</td><td width=20%>Blank value</td><td width=20%>Please select Customer.</td><td width=20%>Please select Customer.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_Org_Blank><td width=20%>Blank Sales Organization</td><td width=20%>Blank value</td><td width=20%>Please select Sales Organization.</td><td width=20%>Please select Sales Organization.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_Region_Blank><td width=20%>Blank Region value</td><td width=20%>Blank value</td><td width=20%>Please select Region.</td><td width=20%>Please select Region.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_AddProd_Blank_Salesplan><td width=20%>Add Product with Blank Sales Plan</td><td width=20%>Blank value</td><td width=20%>Please select Sales Plan.</td><td width=20%>Please select Sales Plan.</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_grid_visibility><td width=20%>Verify 'Product Description' grid visibility</td><td width=20%>Sales Plan value</td><td width=20%>Product Description grid appeared</td><td width=20%>Product Description grid appeared</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=C_AddProdButton_visibility><td width=20%>Verify 'Add Product' button visibility</td><td width=20%>Not Applicable</td><td width=20%>'Add Product' button is available</td><td width=20%>'Add Product' button is available</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.yash.bartersuite.Testcase.Salesorder.Testcase03_AddSalesOrderCustomer@ac3a89</td></tr>
+<tr>
+<td title='com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin.Validlogin()'><b>Validlogin</b><br>Test class: com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin<br/>
+<a href="#Output-7099431" onClick='toggleBox("Output-7099431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7099431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7099431">
+<table border=1px; style= width:100%;color=#808080>   <tr> <th width=20%>Step Description</th> <th width=20%>Input Value</th> <th width=20%>Expected Value</th> <th width=20%>Actual Value</th> <th width=20%>Result</th></tr><br/>
+<tr id=Username><td width=20%>Enter valid username</td><td width=20%>admin</td><td width=20%>Should accept the value</td><td width=20%>Field accept the entered character</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Password><td width=20%>Enter valid Password</td><td width=20%>admin</td><td width=20%>Should accept the value</td><td width=20%>Field accept the entered character</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+<tr id=Submit><td width=20%>Submit the Credential</td><td width=20%>Submit</td><td width=20%>Should validate the credential</td><td width=20%>Login Sucessfull</td><TD BGCOLOR= #00ff00 > Pass</tr><br/>
+</table><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.yash.bartersuite.Testcase.Login.Testcase_ValidLogin@10ab905</td></tr>
+</table><p>
+</body>
+</html>

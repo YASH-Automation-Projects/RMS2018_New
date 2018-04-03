@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SalesOrder_Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="AddingSingleGrainTrader">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.Salesorder.Testcase01_AddSingleGrainTrader"/>
+    </classes>
+  </test> <!-- AddingSingleGrainTrader -->
+  <test name="AddingmultipleGrainTrader">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.Salesorder.Testcase02_AddMultipleGrainTrader"/>
+    </classes>
+  </test> <!-- AddingmultipleGrainTrader -->
+  <test name="SearchwithAllValues">
+    <classes>
+      <class name="com.yash.bartersuite.Testcase.SalesplanSearch.Testcase01_Searchwithallcriteria"/>
+    </classes>
+  </test> <!-- SearchwithAllValues -->
+</suite> <!-- Failed suite [SalesOrder_Suite] -->
